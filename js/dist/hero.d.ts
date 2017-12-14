@@ -1,4 +1,6 @@
 import { SemanticCOLORS } from 'semantic-ui-react';
+import { State } from './Service';
+import './find';
 export declare namespace Tier {
     const God = 4;
     const DemiGod = 3;
@@ -36,3 +38,10 @@ export declare type HeroRating = {
 export declare const heros: Hero[];
 export declare const heroCompare: (a: Hero, b: Hero) => number;
 export declare const heroColor: (a: Hero) => SemanticCOLORS;
+export declare const scoredChampions: (myHeroes: boolean, state: State, ratings: HeroRating[]) => {
+    tier: number;
+    tags: string[];
+    heroId: string;
+    name: string;
+    heroClass: HeroClass;
+}[];

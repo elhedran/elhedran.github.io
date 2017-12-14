@@ -4,7 +4,6 @@ import { State, Service } from './Service';
 import { Tier, Hero } from './hero';
 export declare namespace RatedTier {
     type Props = {
-        title: string;
         heroRatings: (Hero & {
             tags: string[];
         } & {

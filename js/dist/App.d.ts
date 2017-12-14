@@ -4,6 +4,7 @@ export declare enum AppLocation {
     Home = "Home",
     Offense = "Offense",
     Defense = "Defense",
+    Comparison = "Comparison",
 }
 export declare type AppState = {
     appLocation: AppLocation;
